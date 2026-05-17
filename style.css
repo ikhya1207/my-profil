@@ -1,31 +1,90 @@
-body{
-    font-family: Arial;
-    margin:0;
-    background:#111;
-    color:white;
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
 }
 
-header{
-    background:#222;
-    padding:20px;
-    display:flex;
-    justify-content:space-between;
+body {
+    background: #0f172a;
+    color: white;
+    line-height: 1.6;
 }
 
-nav a{
-    color:white;
-    margin:10px;
-    text-decoration:none;
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 50px;
+    background: rgba(255,255,255,0.05);
+    position: sticky;
+    top: 0;
 }
 
-section{
-    padding:60px;
-    text-align:center;
+nav a {
+    color: white;
+    text-decoration: none;
+    margin-left: 20px;
+    transition: 0.3s;
 }
 
-.card{
-    background:#333;
-    padding:20px;
-    margin:15px;
-    border-radius:10px;
+nav a:hover {
+    color: #38bdf8;
+}
+
+.hero {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background: linear-gradient(to right, #1e293b, #0f172a);
+}
+
+.hero h2 {
+    font-size: 3rem;
+}
+
+.hero p {
+    margin: 15px 0;
+    font-size: 1.2rem;
+}
+
+.btn {
+    display: inline-block;
+    padding: 12px 25px;
+    background: #38bdf8;
+    color: black;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+section {
+    padding: 80px 50px;
+    text-align: center;
+}
+
+.project-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.card {
+    background: #1e293b;
+    padding: 20px;
+    width: 250px;
+    border-radius: 12px;
+    transition: 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+    background: #334155;
+}
+
+#contact {
+    background: #1e293b;
 }
