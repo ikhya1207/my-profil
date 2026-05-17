@@ -1,1 +1,1 @@
-console.log("Website aktif");
+console.log("Portfolio Udin siap 🚀");
